@@ -1,0 +1,60 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../consts';
+---
+<div class="h-8 bg-[#3c44a3] text-white">
+	<div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+		<div class="">
+			<small>Contact: 322 1234567 | Emergency: 322123456</small>
+		</div>
+
+		<div class="flex items-center gap-2">
+			<iconify-icon icon="ic:baseline-facebook"></iconify-icon>
+			<iconify-icon icon="mdi:instagram"></iconify-icon>
+			<iconify-icon icon="ri:google-fill"></iconify-icon>
+		</div>
+	</div>
+</div>
+
+<header class="bg-white py-1">
+    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between -2">
+            <div class="flex-1 md:flex md:items-center md:gap-12">
+                <a class="block text-teal-600" href="/">
+                    <img class="h-[120px]" src="images/logo-renteria.png" alt="Logo Clinica Renteria">
+                </a>
+            </div>
+            <div class="md:flex md:items-center md:gap-12">
+                <nav aria-label="Global" class="hidden md:block">
+                    <ul class="flex items-center gap-1 text-sm">
+                        <li>
+							<HeaderLink href="/">
+								Inicio
+							</HeaderLink>
+                        </li>
+                        <li>
+                            <HeaderLink href="/nosotros">
+								Nosotros
+							</HeaderLink>
+                        </li>
+                        <li>
+                            <HeaderLink href="/servicios">
+								Servicios
+							</HeaderLink>
+                        </li>
+                        <li>
+							<HeaderLink href="#contacto">
+								Contacto
+							</HeaderLink>
+                        </li>
+						<li>
+                            <HeaderLink href="#">
+								Llamar Ahora
+							</HeaderLink>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>

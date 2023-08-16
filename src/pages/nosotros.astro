@@ -1,0 +1,39 @@
+---
+import Especialistas from '../components/Especialistas.astro';
+import Layout from '../layouts/MainLayout.astro';
+---
+
+<Layout
+	title="Nosotros"
+	description="Lorem ipsum dolor sit amet"
+	pubDate={new Date('August 08 2021')}
+	heroImage="/blog-placeholder-about.jpg"
+>
+	<div>
+		<section
+			class="bg-center bg-no-repeat h-[400px] relative" style="background: linear-gradient(90deg, rgba(60,68,163,0.4) 10%, rgba(60,68,163,0) 100%),  url(./images/DSC06549.webp); background-position: center; background-size:cover;"
+		>
+			<div class="flex items-end h-full max-w-screen-xl mx-auto text-left z-20">
+				<div class="px-4 sm:px-6 lg:px-8">
+					<h1 class="text-3xl font-extrabold sm:text-5xl mb-10 max-w-[700px] text-white z-30">
+						NOSOTROS
+					</h1>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 mt-24">
+
+	<Especialistas/>
+
+
+	<h2>Nuestras Instalaciones</h2>
+
+<!-- galeria -->
+
+
+
+
+	</div>
+</Layout>
