@@ -1,16 +1,17 @@
 ---
 import Layout from "../layouts/MainLayout.astro";
+import Servicios from "../components/Services.astro";
 ---
 
 <Layout title="Servicios" description="Lorem ipsum dolor sit amet">
     <div>
         <section
-            class="bg-center bg-no-repeat h-[400px] relative" style="background: linear-gradient(90deg, rgba(60,68,163,0.4) 10%, rgba(60,68,163,0) 100%),  url(./images/DSC06549.webp); background-position: center; background-size:cover;"
+            class="bg-center bg-no-repeat h-[400px] relative" style="background: linear-gradient(90deg, rgba(60,68,163,0.4) 10%, rgba(60,68,163,0) 100%),  url(./images/DSC00080.webp); background-position: center; background-size:cover;"
         >
             <div class="flex items-end h-full max-w-screen-xl mx-auto text-left z-20">
                 <div class="px-4 sm:px-6 lg:px-8">
                     <h1 class="text-3xl font-extrabold sm:text-5xl mb-10 max-w-[700px] text-white z-30">
-                        LABORATORIO DE ANALISIS CLÍNICOS - 24HRS
+                        NUESTROS SERVICIOS
                     </h1>
                 </div>
             </div>
@@ -29,18 +30,10 @@ import Layout from "../layouts/MainLayout.astro";
                     <h1
                         class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
                     >
-                        Servicio
+                        Servicios Médicos
                     </h1>
                     <p class="mb-8 leading-relaxed">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Totam est, enim vitae autem recusandae, facilis culpa
-                        reiciendis aperiam officiis dolorum distinctio
-                        perferendis exercitationem quidem earum placeat
-                        repellat. Magnam, odio illum. Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Eius molestiae similique
-                        asperiores consequatur adipisci ad quasi, cum ea
-                        consequuntur a distinctio, quae quod, cupiditate eum
-                        maxime? Debitis facere soluta necessitatibus.
+                        Bienvenido a la Clínica Rentería, donde tu bienestar es nuestra prioridad. Nuestra amplia gama de servicios médicos está diseñada para brindarte atención integral y de calidad en un entorno de confianza y comodidad. Nuestro equipo de profesionales altamente capacitados y dedicados está aquí para cuidar de ti y de tus seres queridos en cada paso del camino.
                     </p>
                 </div>
                 <div class="lg:max-w-lg lg:w-full md:w-1/2 w-full">
@@ -52,34 +45,10 @@ import Layout from "../layouts/MainLayout.astro";
                 </div>
             </div>
 
-            <div
-                class="container mx-auto flex md:flex-row flex-col items-center"
-            >
-                <div
-                    class="lg:max-w-lg lg:w-full md:w-1/2 w-full lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
-                >
-                    <img
-                        class="object-cover object-center rounded-full"
-                        alt="Clínica Rentería"
-                        src="images/DSC00002.jpg"
-                    />
-                </div>
-                <div
-                    class="lg:flex-grow md:w-1/2 md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
-                >
-                    <p class="mb-8 leading-relaxed">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Totam est, enim vitae autem recusandae, facilis culpa
-                        reiciendis aperiam officiis dolorum distinctio
-                        perferendis exercitationem quidem earum placeat
-                        repellat. Magnam, odio illum. Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Eius molestiae similique
-                        asperiores consequatur adipisci ad quasi, cum ea
-                        consequuntur a distinctio, quae quod, cupiditate eum
-                        maxime? Debitis facere soluta necessitatibus.
-                    </p>
-                </div>
-            </div>
+            <Servicios hiddenTitle />
+
+
+            
         </section>
 
         <!-- LISTA DE SUB SERVICIOS -->

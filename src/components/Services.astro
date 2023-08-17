@@ -1,0 +1,42 @@
+---
+const {hiddenTitle} = Astro.props;
+---
+<div class="services mt-24">
+   <div class={`${hiddenTitle ? 'hidden' : ' ' }`}>
+
+       <h1 class="text-4xl  font-bold  md:text-[42px]"> Nuestros Servicios </h1>
+       <p class=" mt-[30px] mb-[40px] w-3/4 ">Nuestra amplia gama de servicios médicos está diseñada para brindarte atención integral y de calidad en un entorno de confianza y comodidad.</p>
+    </div>
+<div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10 flex-wrap text-white text-center ">
+    <div class="px-6 py-9 bg-[#3c44a3] rounded-xl ">
+        <i class="fa-solid fa-hospital text-4xl m-3"></i>
+        <h2 class="text-2xl font-medium pb-4">Servicio Médico 24/7</h2>
+        <button><a class="no-underline  hover:underline hover:text-[#08b4c4] duration-500" href="#">Más información</a></button>
+    </div>
+    <div class="px-6 py-9  bg-[#3c44a3] rounded-xl ">
+        <i class="fa-solid fa-magnifying-glass-chart text-4xl m-3"></i>
+        <h2 class="text-2xl font-medium pb-4">Laboratorio Análisis Clínicos 24/365</h2>
+        <button><a class="no-underline  hover:underline hover:text-[#08b4c4] duration-500" href="#">Más información</a></button>
+    </div>
+    <div class="px-6 py-9  bg-[#3c44a3] rounded-xl ">
+        <i class="fa-solid fa-x-ray text-4xl m-3"></i>
+        <h2 class="text-2xl font-medium pb-4">Rayos X 24/365</h2>
+        <button><a class="no-underline  hover:underline hover:text-[#08b4c4] duration-500" href="#">Más información</a></button>
+    </div>
+    <div class="px-6 py-9  bg-[#3c44a3] rounded-xl ">
+        <i class="fa-solid fa-calendar-check text-4xl m-3"></i>
+        <h2 class="text-2xl font-medium pb-4">Ultrasonido Previa Cita*</h2>
+        <button><a class="no-underline text-white hover:underline hover:text-[#08b4c4] duration-500" href="#">Más información</a></button>
+    </div>
+    <div class="px-6 py-9  bg-[#3c44a3] rounded-xl ">
+        <i class="fa-solid fa-truck-medical text-4xl m-3"></i>
+        <h2 class="text-2xl font-medium pb-4">Servicios de Farmacia, Hospitalización y Quirófano</h2>
+        <button><a class="no-underline text-white hover:underline hover:text-[#08b4c4] duration-500" href="#">Más información</a></button>
+    </div>
+    <div class="px-6 py-9  bg-[#3c44a3] rounded-xl ">
+        <i class="fa-solid fa-user-doctor text-4xl m-3"></i>
+        <h2 class="text-2xl font-medium pb-4">Ginecología, Traumatología y Dermatología</h2>
+        <button><a class="no-underline text-white hover:underline hover:text-[#08b4c4] duration-500" href="#">Más información</a></button>
+    </div>
+</div>
+</div>

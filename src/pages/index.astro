@@ -1,6 +1,7 @@
 ---
 import BannerIndex from '../components/BannerIndex.astro';
 import Especialistas from '../components/Especialistas.astro';
+import Servicios from '../components/Services.astro';
 import Layout from '../layouts/MainLayout.astro';
 ---
 
@@ -16,11 +17,8 @@ import Layout from '../layouts/MainLayout.astro';
 				<div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
 					<h1 class="text-4xl text-gray-900 font-bold md:text-[42px] "> Clínica Rentería</h1>
 					<p class="mb-8 leading-relaxed my-6">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam est, enim vitae autem recusandae,
-						facilis culpa reiciendis aperiam officiis dolorum distinctio perferendis exercitationem quidem
-						earum placeat repellat. Magnam, odio illum. Lorem ipsum dolor sit amet consectetur adipisicing
-						elit. Eius molestiae similique asperiores consequatur adipisci ad quasi, cum ea consequuntur a
-						distinctio, quae quod, cupiditate eum maxime? Debitis facere soluta necessitatibus.</p>
+						Somos una clínica ubicada en La Peñita, Nayarit. Con más de 30 años de experiencia en el ramo de la salud. Uno de nuestros pilares es el servicio, pues  para nosotros es prioridad ofrecerte siempre calidad humana en cada consulta, estudio o análisis. Recuerda que para nosotros tu salud y bienestar es lo más importante.
+Trabajamos las 24 horas los 365 días del año.</p>
 				</div>
 				<div class="lg:max-w-lg lg:w-full md:w-1/2 w-full">
 					<img class="object-cover object-center rounded-xl" alt="Clínica Rentería" src="images/DSC00002.jpg">
@@ -36,45 +34,8 @@ import Layout from '../layouts/MainLayout.astro';
 	
 	
 		<!-- NUESTRO SERVICIOS -->
-		<div class="services mt-24">
-				<h1 class="text-4xl  font-bold  md:text-[42px]"> Nuestros Servicios </h1>
-			<p class=" mt-[30px] mb-[40px] w-3/4 ">We turn information into actionable
-				insights We work to understand your issues
-				and are driven to ask better questions in the pursuit of making work.</p>
-			<div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10 flex-wrap text-white text-center ">
-				<div class="px-6 py-9 bg-[#3c44a3] rounded-xl ">
-					<i class="fa-solid fa-hospital text-4xl m-3"></i>
-					<h2 class="text-2xl font-medium pb-4">Servicio Médico 24/7</h2>
-					<button><a class="no-underline  hover:underline hover:text-[#08b4c4] duration-500" href="#">Más información</a></button>
-				</div>
-				<div class="px-6 py-9  bg-[#3c44a3] rounded-xl ">
-					<i class="fa-solid fa-magnifying-glass-chart text-4xl m-3"></i>
-					<h2 class="text-2xl font-medium pb-4">Laboratorio Análisis Clínicos 24/365</h2>
-					<button><a class="no-underline  hover:underline hover:text-[#08b4c4] duration-500" href="#">Más información</a></button>
-				</div>
-				<div class="px-6 py-9  bg-[#3c44a3] rounded-xl ">
-					<i class="fa-solid fa-x-ray text-4xl m-3"></i>
-					<h2 class="text-2xl font-medium pb-4">Rayos X 24/365</h2>
-					<button><a class="no-underline  hover:underline hover:text-[#08b4c4] duration-500" href="#">Más información</a></button>
-				</div>
-				<div class="px-6 py-9  bg-[#3c44a3] rounded-xl ">
-					<i class="fa-solid fa-calendar-check text-4xl m-3"></i>
-					<h2 class="text-2xl font-medium pb-4">Ultrasonido Previa Cita*</h2>
-					<button><a class="no-underline text-white hover:underline hover:text-[#08b4c4] duration-500" href="#">Más información</a></button>
-				</div>
-				<div class="px-6 py-9  bg-[#3c44a3] rounded-xl ">
-					<i class="fa-solid fa-truck-medical text-4xl m-3"></i>
-					<h2 class="text-2xl font-medium pb-4">Servicios de Farmacia, Hospitalización y Quirófano</h2>
-					<button><a class="no-underline text-white hover:underline hover:text-[#08b4c4] duration-500" href="#">Más información</a></button>
-				</div>
-				<div class="px-6 py-9  bg-[#3c44a3] rounded-xl ">
-					<i class="fa-solid fa-user-doctor text-4xl m-3"></i>
-					<h2 class="text-2xl font-medium pb-4">Ginecología</h2>
-					<button><a class="no-underline text-white hover:underline hover:text-[#08b4c4] duration-500" href="#">Más información</a></button>
-				</div>
-			</div>
-		</div>
-	
+		<Servicios />
+		
 	
 	
 		<!-- GALERIA CLINICA E INSTALACIONES  -->
@@ -85,7 +46,7 @@ import Layout from '../layouts/MainLayout.astro';
 		<!-- Testimonios -->
 		<section>
 			<div class="px-5 py-24 ">
-			<h1 class="text-4xl text-gray-900 font-bold md:text-[42px] "> Testimonios de Google y Facebook </h1>
+			<h1 class="text-4xl text-gray-900 font-bold md:text-[42px] "> Testimonios de nuestros clientes</h1>
 				<div class="flex flex-wrap -m-4 py-6">
 					<div class="py-4 md:w-1/3 w-full">
 						<div class="h-full bg-gray-100 p-8 rounded">
