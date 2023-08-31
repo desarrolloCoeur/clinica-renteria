@@ -2,7 +2,7 @@
 title: '¿La salud de la mujer es primordial, ya conoces nuestro servicio de Ginecología?'
 description: 'Clínica Rentería, tu centro de atención médica integral en La Peñita, Nayarit. Nos enorgullece ser tu aliado confiable en tu búsqueda de salud y bienestar. Específicamente, nuestros servicios de ginecología están diseñados para cuidar de las necesidades únicas de las mujeres en todas las etapas de la vida.'
 pubDate: 'Jul 15 2022'
-heroImage: '/images/ultrasonido.webp'
+heroImage: '/images/ultrasonido-clinica-renteria.webp'
 ---
 ## ¿La salud de la mujer es primordial, ya conoces nuestro servicio de Ginecología?
 

@@ -2,7 +2,7 @@
 title: '4 razones por qué acudir a Clínica Rentería en La Peñita'
 description: 'Bienvenidos a Clínica Rentería, un nombre sinónimo de atención médica excepcional y dedicada en la comunidad de La Peñita. Con 30 años de experiencia en el cuidado de la salud'
 pubDate: 'Jul 08 2022'
-heroImage: '/images/DSC00050.webp'
+heroImage: '/images/analisis.webp'
 ---
 
 
