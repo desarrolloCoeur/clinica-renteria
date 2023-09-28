@@ -9,16 +9,20 @@ import { SITE_TITLE } from '../consts';
 		</div>
 
 		<div class="flex items-center gap-2">
-			<iconify-icon icon="ic:baseline-facebook"></iconify-icon>
-			<iconify-icon icon="mdi:instagram"></iconify-icon>
-			<iconify-icon icon="ri:google-fill"></iconify-icon>
+            <a href="https://www.facebook.com/clinicarenteria.1" target="_blank">
+			    <iconify-icon icon="ic:baseline-facebook"></iconify-icon></a>
+            <a href="https://www.instagram.com/clinica.renteria/" target="_blank">
+			    <iconify-icon icon="mdi:instagram"></iconify-icon></a>
+            <a href="https://www.google.com/search?q=clinica+renteria&rlz=1C1CHBF_esMX1041MX1041&oq=clinica+renteria&gs_lcrp=EgZjaHJvbWUqCwgAEEUYJxg7GIoFMgsIABBFGCcYOxiKBTINCAEQLhivARjHARiABDIHCAIQABiABDIHCAMQABiABDIICAQQABgWGB4yCggFEAAYChgWGB4yBggGEEUYPDIGCAcQRRg90gEIMjQ2OWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8" target="_blank">
+			    <iconify-icon icon="ri:google-fill"></iconify-icon></a>
 		</div>
 	</div>
 </div>
 
-<header class="bg-white py-1">
+<!-- <header class="bg-white py-1">
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between -2">
+
             <div class="flex-1 md:flex md:items-center md:gap-12">
                 <a class="block text-teal-600" href="/">
                     <img class="h-[120px]" src="/images/logo-renteria.png" alt="Logo Clinica Renteria">
@@ -59,8 +63,151 @@ import { SITE_TITLE } from '../consts';
                         </li>
                     </ul>
                 </nav>
-				<div class="text-white bg-[#29B4C4] rounded-md px-2 py-1 h-9 w-9 text-2xl md:hidden"><i class="fa-solid fa-bars bg-"></i></div>
+                <a id="btnMenu" class="text-white bg-[#29B4C4] rounded-md px-2 py-1 h-9 w-9 text-2xl md:hidden" href="#"><i class="fa-solid fa-bars"></i></a>
             </div>
+
+
+            <nav id="menu" class="hidden h-screen items-start pt-20 bg-[#203264]">
+                <ul class="flex gap-6 uppercase text-2xl flex-col justify-center items-center">
+                    <li>
+                        <a class="text-white transition hover:text-[#d9974d]" href="/">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="text-white transition hover:text-[#d9974d]" href="/nosotros">Nosotros</a>
+                    </li>
+                    <li>
+                        <a class="text-white transition hover:text-[#d9974d]" href="/servicios">Servicios</a>
+                    </li>
+                    <li> 
+                        <a class="text-white transition hover:text-[#d9974d]" href="#contacto">Contacto</a>
+                    </li>
+                    <li>
+                        <a class="text-white transition hover:text-[#d9974d]" href="/blog">Blog</a>
+                    </li>
+                    <li>
+                        <a class="text-white transition hover:text-[#d9974d]" href="#">ENG</a>
+                    </li>
+                </ul>
+            </nav>
+
+
         </div>
     </div>
-</header>
+</header> -->
+
+
+
+
+ <header class=" py-1 bg-white">
+    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 ">
+        <div class="flex h-full items-center justify-between">
+            <div class="w-full md:flex md:items-center md:gap-12 md:justify-center">
+
+                <div class="flex items-center gap-12 text-ms uppercase md:hidden justify-between" >
+                    <a href="/">
+                        <img class="h-20 md:h-20 md:object-contain" src="/images/logo-renteria.png" alt="Logo Clinica Renteria">
+                    </a>
+                    <a id="btnMenu" class="text-white bg-[#29B4C4] rounded-md px-2 py-1 h-9 w-9 text-2xl" href="#"><i class="fa-solid fa-bars"></i></a>
+                </div>
+
+                <div class="flex-1 md:flex md:items-center md:gap-12 lg:hidden-none hidden">
+                    <a class="block text-teal-600" href="/">
+                        <img class="h-[120px]" src="/images/logo-renteria.png" alt="Logo Clinica Renteria">
+                    </a>
+                </div>
+                <nav aria-label="Global" class="hidden md:block">
+                    <ul class="flex items-center gap-1 text-sm">
+                        <li>
+							<HeaderLink href="/">
+								Inicio
+							</HeaderLink>
+                        </li>
+                        <li>
+                            <HeaderLink href="/nosotros">
+								Nosotros
+							</HeaderLink>
+                        </li>
+                        <li>
+                            <HeaderLink href="/servicios">
+								Servicios
+							</HeaderLink>
+                        </li>
+                        <li>
+							<HeaderLink href="#contacto">
+								Contacto
+							</HeaderLink>
+                        </li>
+                        <li>
+							<HeaderLink href="/blog">
+								Blog
+							</HeaderLink>
+                        </li>
+						<li>
+                            <HeaderLink href="#">
+								ENG
+							</HeaderLink>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <nav id="menu" class="hidden h-screen items-start pt-20 bg-white">
+            <ul class="flex gap-6 uppercase text-2xl flex-col justify-center items-center">
+                <li>
+                    <a class="text-black" href="/">Inicio</a>
+                </li>
+                <li>
+                    <a class="text-black" href="/nosotros">Nosotros</a>
+                </li>
+                <li>
+                    <a class="text-black" href="/servicios">Servicios</a>
+                </li>
+                <li> 
+                    <a class="text-black" href="#contacto">Contacto</a>
+                </li>
+                <li>
+                    <a class="text-black" href="/blog">Blog</a>
+                </li>
+                <li>
+                    <a class="text-black" href="#">ENG</a>
+                </li>
+            </ul>
+        </nav>
+
+	</header>
+
+
+
+
+<script type="text/javascript">
+    const btnMenu = document.querySelector("#btnMenu");
+    const menu = document.querySelector("#menu");
+    const menuLinks = document.querySelectorAll("#menu a")
+    let isActive = false;
+
+    btnMenu.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        if(!isActive){
+            menu.classList.add("flex","justify-center")
+            menu.classList.remove("hidden");
+            isActive = true;
+            btnMenu.innerHTML = `<i class="fa-solid fa-xmark"></i>`
+        } else {
+            menu.classList.remove("flex","justify-center")
+            menu.classList.add("hidden");
+            isActive = false;
+            btnMenu.innerHTML = `<i class="fa-solid fa-bars"></i>`
+        }
+        
+    })
+    menuLinks.forEach((link) => {
+        link.addEventListener("click", (e) =>{
+            menu.classList.remove("flex","justify-center")
+            menu.classList.add("hidden");
+            isActive = false;
+            btnMenu.innerHTML = `<i class="fa-solid fa-bars"></i>`
+        })
+    })
+</script>
