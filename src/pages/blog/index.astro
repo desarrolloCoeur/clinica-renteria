@@ -19,17 +19,27 @@ const posts = (await getCollection('blog')).sort(
 	<body>
 		<Header />
 		<main>
+			<section class="bg-center bg-no-repeat h-[400px] relative" style="background: linear-gradient(90deg, rgba(60,68,163,0.4) 10%, rgba(60,68,163,0) 100%),  url(/images/interior-ambulancia-2.webp); background-position: center; background-size:cover;">
+			<div class="flex items-end h-full max-w-screen-xl mx-auto text-left z-20">
+				<div class="px-4 sm:px-6 lg:px-8">
+					<h1 class="text-3xl font-extrabold sm:text-5xl mb-10 max-w-[700px] text-white z-30">
+						BLOGS
+					</h1>
+				</div>
+			</div>
+			</section>
 			<section>
-				<ul class="container w-11/12 mx-auto grid md:grid-cols-2 gap-10 my-10">
+				<!-- <h3 class="text-center text-5xl pt-12">Blogs</h3> -->
+				<ul class="container w-11/12 mx-auto grid md:grid-cols-4 gap-10 my-24">
 					{
 						posts.map((post) => (
 							<li>
 								<a href={`/blog/${post.slug}/`}>
-									<img width={700} height={450} src={post.data.heroImage} alt=""  class="h-[450px]"/>
-									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
+									<img width={700} height={450} src={post.data.heroImage} class="h-[450px] object-cover"/>
+									<p class="pt-3 pb-0">
 										<FormattedDate date={post.data.pubDate} />
 									</p>
+									<h4 class="font-bold">{post.data.title}</h4>
 								</a>
 							</li>
 						))
