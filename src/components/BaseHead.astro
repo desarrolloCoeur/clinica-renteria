@@ -46,6 +46,16 @@ const { title, description, image = '/images/logo-renteria.webp' } = Astro.props
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
 
+<!-- Google tag (gtag.js) -->
+<script async type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-CGD86VJW25"></script>
+<script type="text/partytown">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CGD86VJW25');
+</script>
+
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 <link
   rel="stylesheet"
