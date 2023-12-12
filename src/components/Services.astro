@@ -1,41 +1,45 @@
 ---
 const {hiddenTitle} = Astro.props;
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 <div class="services mt-24">
    <div class={`${hiddenTitle ? 'hidden' : ' ' }`}>
-       <h1 class="text-4xl  font-bold  md:text-[42px]"> Nuestros Servicios </h1>
-       <p class=" mt-[30px] mb-[40px] w-3/4 ">Nuestra amplia gama de servicios médicos está diseñada para brindarte atención integral y de calidad en un entorno de confianza y comodidad.</p>
+       <h1 class="text-4xl  font-bold  md:text-[42px]"> {t('services.title')}</h1>
+       <p class=" mt-[30px] mb-[40px] w-3/4 "> {t('services.subtitle')}</p>
     </div>
 <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10 flex-wrap text-white text-center ">
     <div class="px-6 py-9 bg-[#3c44a3] rounded-xl ">
         <i class="fa-solid fa-hospital text-4xl m-3"></i>
-        <h2 class="text-2xl font-medium pb-4">Servicio Médico 24/7</h2>
-        <button><a class="no-underline  hover:underline hover:text-[#08b4c4] duration-500" href="#">Más información</a></button>
+        <h2 class="text-2xl font-medium pb-4">{t('services.general')}</h2>
+        <button><a class="no-underline  hover:underline hover:text-[#08b4c4] duration-500" href={t('services.link')}>{t('services.info')}</a></button>
     </div>
     <div class="px-6 py-9  bg-[#3c44a3] rounded-xl ">
         <i class="fa-solid fa-magnifying-glass-chart text-4xl m-3"></i>
-        <h2 class="text-2xl font-medium pb-4">Laboratorio Análisis Clínicos 24/365</h2>
-        <button><a class="no-underline  hover:underline hover:text-[#08b4c4] duration-500" href="#">Más información</a></button>
+        <h2 class="text-2xl font-medium pb-4">{t('services.lab')}</h2>
+        <button><a class="no-underline  hover:underline hover:text-[#08b4c4] duration-500" href={t('services.link')}>{t('services.info')}</a></button>
     </div>
     <div class="px-6 py-9  bg-[#3c44a3] rounded-xl ">
         <i class="fa-solid fa-x-ray text-4xl m-3"></i>
-        <h2 class="text-2xl font-medium pb-4">Rayos X 24/365</h2>
-        <button><a class="no-underline  hover:underline hover:text-[#08b4c4] duration-500" href="#">Más información</a></button>
+        <h2 class="text-2xl font-medium pb-4">{t('services.xrays')}</h2>
+        <button><a class="no-underline  hover:underline hover:text-[#08b4c4] duration-500" href={t('services.link')}>{t('services.info')}</a></button>
     </div>
     <div class="px-6 py-9  bg-[#3c44a3] rounded-xl ">
         <i class="fa-solid fa-calendar-check text-4xl m-3"></i>
-        <h2 class="text-2xl font-medium pb-4">Ultrasonido Previa Cita*</h2>
-        <button><a class="no-underline text-white hover:underline hover:text-[#08b4c4] duration-500" href="#">Más información</a></button>
+        <h2 class="text-2xl font-medium pb-4">{t('services.ultrasound')}</h2>
+        <button><a class="no-underline text-white hover:underline hover:text-[#08b4c4] duration-500" href={t('services.link')}>{t('services.info')}</a></button>
     </div>
     <div class="px-6 py-9  bg-[#3c44a3] rounded-xl ">
         <i class="fa-solid fa-truck-medical text-4xl m-3"></i>
-        <h2 class="text-2xl font-medium pb-4">Servicios de Farmacia, Hospitalización y Quirófano</h2>
-        <button><a class="no-underline text-white hover:underline hover:text-[#08b4c4] duration-500" href="#">Más información</a></button>
+        <h2 class="text-2xl font-medium pb-4">{t('services.pharmacy')}</h2>
+        <button><a class="no-underline text-white hover:underline hover:text-[#08b4c4] duration-500" href={t('services.link')}>{t('services.info')}</a></button>
     </div>
     <div class="px-6 py-9  bg-[#3c44a3] rounded-xl ">
         <i class="fa-solid fa-user-doctor text-4xl m-3"></i>
-        <h2 class="text-2xl font-medium pb-4">Ginecología, Traumatología y Dermatología</h2>
-        <button><a class="no-underline text-white hover:underline hover:text-[#08b4c4] duration-500" href="#">Más información</a></button>
+        <h2 class="text-2xl font-medium pb-4">{t('services.gine')}</h2>
+        <button><a class="no-underline text-white hover:underline hover:text-[#08b4c4] duration-500" href={t('services.link')}>{t('services.info')}</a></button>
     </div>
 </div>
 </div>

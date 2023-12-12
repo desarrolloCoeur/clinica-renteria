@@ -1,4 +1,9 @@
 ---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 const today = new Date();
 ---
 <div class="bg-teal-50 border-t-[2px] border-[#3c44a3] ">
@@ -6,37 +11,37 @@ const today = new Date();
 		<div>
 			<h3 class="mb-5 text-2xl font-semibold">Clinica Renteria</h3>
 			<div class="flex gap-2 flex-col text-[17px]">
-				<p>Somos una clínica ubicada en La Peñita, Nayarit. Con más de 30 años de experiencia en el ramo de la salud. Uno de nuestros pilares es el servicio, pues  para nosotros es prioridad ofrecerte siempre calidad humana en cada consulta.</p>
+				<p>{t('footer.renteria')}</p>
 			</div>
 		</div>
 		<div>
-			<h3 class="mb-5 text-2xl font-semibold">¿Tienes una emergencia?</h3>
+			<h3 class="mb-5 text-2xl font-semibold"> {t('footer.emergency')}  </h3>
 			<div class="flex gap-2 flex-col text-[17px]">
-				<p>Ponte en contacto con nosotros, te contestaremos a la brevedad posible.</p>
-				<p><strong>Emergencias:</strong> (327) 274-0140</p>
-				<p><strong>Teléfono:</strong> (327) 274-0140</p>
-				<p><strong>WhatsApp:</strong> (322) 307-4119</p>
+				<p> {t('footer.contact')} </p>
+				<p><strong>{t('nav.emergency')}:</strong> <a href="tel:327274014">(327) 274-0140</a></p>
+				<p><strong>{t('footer.phone')}:</strong> <a href="tel:327274014">(327) 274-0140</a></p>
+				<p><strong>WhatsApp:</strong> <a href="https://wa.me/5213223074119" target="_blank">(322) 307-4119</a></p>
 			</div>
 		</div>	
 		<div>
-			<h3 class="mb-5 text-2xl font-semibold">Nuestros Servicios</h3>
+			<h3 class="mb-5 text-2xl font-semibold">{t('footer.services')}</h3>
 			<div class="flex gap-2 flex-col text-[17px]">
-				<a href="/servicios">Rayos X</a>
-				<a href="/servicios">Ultrasonido</a>
-				<a href="/servicios">Urgencias 24/7</a>
-				<a href="/servicios">Laboratorio 24/7</a>
-				<a href="/servicios">Enfermería</a>
-				<a href="/servicios">Medicina General, Traumatología, Ginecología y Dermatología.</a>
-				<a href="/servicios">Ambulancia</a>
+				<a href={t('link.services')}>{t('footer.xrays')}</a>
+				<a href={t('link.services')}>{t('footer.ultrasound')}</a>
+				<a href={t('link.services')}>{t('footer.emergency')}</a>
+				<a href={t('link.services')}>{t('footer.laboratory')}</a>
+				<a href={t('link.services')}>{t('footer.nursing')}</a>
+				<a href={t('link.services')}>{t('footer.medicine')}</a>
+				<a href={t('link.services')}>{t('footer.ambulance')}</a>
 			</div>
 		</div>	
 		<div>
 			<h3 class="mb-5 text-2xl font-semibold">Sitemap</h3>
 			<div class="flex gap-2 flex-col text-[17px]">
-				<a href="/">Inicio</a>
-				<a href="/nosotros">Nosotros</a>
-				<a href="/servicios">Servicios</a>
-				<a href="#contacto">Contacto</a>
+				<a href={t('link.home')}>{t('nav.home')}</a>
+				<a href={t('link.about')}>{t('nav.about')}</a>
+				<a href={t('link.services')}>{t('nav.services')}</a>
+				<a href="#contacto">{t('nav.contact')}</a>
 
 			</div>
 		</div>			
@@ -50,7 +55,7 @@ const today = new Date();
                 <img class="h-7" src="/images/logo-renteria.webp" alt="Logo Clinica Renteria">
             </div>
             <p class=" text-center text-sm text-white lg:text-right pb-0">
-                Clinica Renteria &copy; 2023. Desarrollado por CoeurMkt.
+                Clinica Renteria &copy; 2023. {t('footer.developed')} CoeurMkt.
             </p>
         </div>
     </div>

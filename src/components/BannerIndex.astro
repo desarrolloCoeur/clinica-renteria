@@ -1,18 +1,24 @@
 ---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+
 ---
 <section class="relative bg-[url(/images/hero-image.webp)] bg-cover bg-[85%] md:bg-center bg-no-repeat  h-[85vh]">
     <div class="absolute top-0 left-0 right-0 bottom-0 gradient-bg"></div>
     <div class="absolute bottom-12 w-full px-4 sm:px-6 lg:px-8">
         <div class="mx-auto max-w-screen-xl">
             <p class="text-white text-5xl font-bold max-w-[480px]">
-                Servicios médicos, laboratorio y rayos X 
+                {t('banner.title')}
             </p>
             <h1 class="text-5xl font-extrabold sm:text-7xl text-white">
                 24HRS
             </h1>
             <div class="mt-6 flex flex-wrap gap-4 text-center">
                 <a href="https://wa.me/5213223074119" target="_blank" class="flex items-center gap-1 rounded-md bg-[#08b4c4]  px-5 py-3 text-xl font-semibold text-white hover:bg-[#3c44a3]  sm:w-auto">
-                    Hacer una Cita 
+                    {t('banner.button')}
                 </a>
             </div>
         </div>

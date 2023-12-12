@@ -1,9 +1,9 @@
 ---
-import Services from "../components/Services.astro";
-import Layout from "../layouts/MainLayout.astro";
+import Layout from "../../layouts/MainLayout.astro";
+import Servicios from "../../components/Services.astro";
 ---
 
-<Layout title="Servicios" description="Lorem ipsum dolor sit amet">
+<Layout title="Our Services" description="Lorem ipsum dolor sit amet">
     <div>
         <section
             class="bg-center bg-no-repeat h-[400px] relative" style="background: linear-gradient(90deg, rgba(60,68,163,0.4) 10%, rgba(60,68,163,0) 100%),  url(/images/urgencias-2.webp); background-position: center; background-size:cover;"
@@ -11,7 +11,7 @@ import Layout from "../layouts/MainLayout.astro";
             <div class="flex items-end h-full max-w-screen-xl mx-auto text-left z-20">
                 <div class="px-4 sm:px-6 lg:px-8">
                     <h1 class="text-3xl font-extrabold sm:text-5xl mb-10 max-w-[700px] text-white z-30">
-                        NUESTROS SERVICIOS
+                        OUR SERVICES
                     </h1>
                 </div>
             </div>
@@ -30,10 +30,10 @@ import Layout from "../layouts/MainLayout.astro";
                     <h1
                         class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
                     >
-                        Servicios Médicos
+                        Medical Services
                     </h1>
                     <p class="mb-8 leading-relaxed">
-                        Bienvenido a la Clínica Rentería, donde tu bienestar es nuestra prioridad. Nuestra amplia gama de servicios médicos está diseñada para brindarte atención integral y de calidad en un entorno de confianza y comodidad. Nuestro equipo de profesionales altamente capacitados y dedicados está aquí para cuidar de ti y de tus seres queridos en cada paso del camino.
+                        Welcome to the Rentería Clinic, where your well-being is our priority. Our wide range of medical services is designed to provide you with comprehensive, quality care in an environment of trust and comfort. Our team of highly trained and dedicated professionals is here to care for you and your loved ones every step of the way.
                     </p>
                 </div>
                 <div class="lg:max-w-lg lg:w-full md:w-1/2 w-full">
@@ -45,7 +45,7 @@ import Layout from "../layouts/MainLayout.astro";
                 </div>
             </div>
 
-            <Services hiddenTitle />
+            <Servicios hiddenTitle />
 
 
             

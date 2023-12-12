@@ -1,11 +1,16 @@
 ---
 import HeaderLink from './HeaderLink.astro';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 import { SITE_TITLE } from '../consts';
 ---
 <div class="h-8 bg-[#3c44a3] text-white">
 	<div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
 		<div class="">
-			<small>Emergencias: (327) 274-0140</small>
+			<small>{t('nav.emergency')}: <a href="tel:+523272740140">(327) 274-0140</a></small>
 		</div>
 
 		<div class="flex items-center gap-2">
@@ -25,47 +30,50 @@ import { SITE_TITLE } from '../consts';
             <div class="w-full md:flex md:items-center md:gap-12 md:justify-center">
 
                 <div class="flex items-center gap-12 text-ms uppercase md:hidden justify-between" >
-                    <a href="/">
+                    <a href={t('link.home')}>
                         <img class="h-20 md:h-20 md:object-contain" src="/images/logo-renteria.png" alt="Logo Clinica Renteria">
                     </a>
                     <a id="btnMenu" class="text-white bg-[#29B4C4] rounded-md px-2 py-1 h-9 w-9 text-2xl" href="#"><i class="fa-solid fa-bars"></i></a>
                 </div>
 
                 <div class="flex-1 md:flex md:items-center md:gap-12 lg:hidden-none hidden">
-                    <a class="block text-teal-600" href="/">
+                    <a class="block text-teal-600" href={t('link.home')}>
                         <img class="h-[120px]" src="/images/logo-renteria.png" alt="Logo Clinica Renteria">
                     </a>
                 </div>
                 <nav aria-label="Global" class="hidden md:block">
                     <ul class="flex items-center gap-1 text-sm">
                         <li>
-							<HeaderLink href="/">
-								Inicio
+							<HeaderLink href={t('link.home')}>
+								{t('nav.home')}
 							</HeaderLink>
                         </li>
                         <li>
-                            <HeaderLink href="/nosotros">
-								Nosotros
+							<HeaderLink href={t('link.about')}>
+                                {t('nav.about')}
 							</HeaderLink>
                         </li>
                         <li>
-                            <HeaderLink href="/servicios">
-								Servicios
+                            <HeaderLink href={t('link.services')}>
+
+                                {t('nav.services')}
 							</HeaderLink>
                         </li>
                         <li>
 							<HeaderLink href="#contacto">
-								Contacto
+                                {t('nav.contact')}
+
 							</HeaderLink>
                         </li>
                         <li>
-							<HeaderLink href="/blog">
+                            <HeaderLink href={t('link.blog')}>
+
 								Blog
 							</HeaderLink>
                         </li>
 						<li>
-                            <HeaderLink href="#">
-								ENG
+                            <HeaderLink href={t('link.lang')}>
+                                {t('nav.lang')}
 							</HeaderLink>
                         </li>
                     </ul>

@@ -6,7 +6,7 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import LastBlogs from '../components/LastBlogs.astro';
 
-type Props = CollectionEntry<'blog'>['data'];
+type Props = CollectionEntry<'blogEs'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
@@ -26,7 +26,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				<div class="container w-11/12 max-w-[1100px] mx-auto">
 					<div class="title text-center max-w-[900px] mx-auto">
 						<div class="">
-							<FormattedDate date={pubDate} />
+							<!--<FormattedDate date={pubDate} />-->
 							{
 								updatedDate && (
 									<div class="last-updated-on text-xl">
