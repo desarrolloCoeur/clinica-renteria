@@ -1,5 +1,5 @@
 ---
-title: 'Priorizando tu Bienestar Mental'
+title: 'Priorizando tu Bienestar Mental | Clinica Renteria'
 description: 'En la Clínica Rentería, entendemos que la salud abarca tanto el bienestar físico como el mental. El estrés, la ansiedad, la depresión y otros problemas emocionales pueden afectar profundamente tu calidad de vida.'
 pubDate: 'Sep 29 2023'
 heroImage: '/images/bienestar-mental.webp'

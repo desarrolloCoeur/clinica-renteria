@@ -1,5 +1,5 @@
 ---
-title: '¿Sabes por qué los RAYOS X son tan importantes en tu salud?'
+title: '¿Sabes por qué los RAYOS X son tan importantes en tu salud? | Clinica Renteria'
 description: 'En Clínica Renteria, entendemos la importancia de contar con herramientas avanzadas para brindar un diagnóstico preciso y rápido. Es por eso que estamos orgullosos de ofrecer servicios de rayos X de vanguardia, una herramienta invaluable en el campo de la medicina diagnóstica.'
 pubDate: 'Jul 22 2022'
 heroImage: '/images/rayos-x-clinica-renteria.webp'

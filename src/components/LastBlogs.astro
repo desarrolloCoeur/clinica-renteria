@@ -1,35 +1,14 @@
 ---
 import { getCollection } from 'astro:content';
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { getLangFromUrl } from '../i18n/utils';
+import SliderBlogs from './react/SliderBlogs'
 
 const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
 
 const posts = lang === "en" ? (await getCollection('blogEn')) : (await getCollection('blogEs'));
 
 ---
-<h2 class="text-4xl mb-5">{lang === "en" ? "Our Last News" : "Nuestras ultimas noticias"}</h2>
-<div class="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
-    {
-        posts.map((post) => (
-        <article class="relative overflow-hidden rounded-lg w-full">
-            <img width={720} height={360} src={post.data.heroImage} alt=""  class="absolute inset-0 h-full w-full object-cover"  />
-            
-            <div class="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64 h-full">
-                <div class="p-4 sm:p-6">        
-                    <a href={`${lang === "en" ? "/en" : ""}/blog/${post.slug}/`}>
-                        <h3 class="mt-0.5 text-lg text-white">
-                            {post.data.title}
-                        </h3>
-                    </a>
-                    <p class="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                        {post.data.description}
-                    </p>
-                    <p class="mt-10 text-white">
-                    </p>
-                </div>
-            </div>
-            </article>
-        ))
-    }
+<div>
+    <h2 class="text-4xl mb-5">{lang === "en" ? "Our Last News" : "Nuestras ultimas noticias"}</h2>
+    <SliderBlogs  client:load posts={posts} lang={lang} />
 </div>

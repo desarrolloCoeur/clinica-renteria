@@ -1,5 +1,5 @@
 ---
-title: 'The Importance of Going to a Dermatologist: Your Skin, Your Health'
+title: 'The Importance of Going to a Dermatologist: Your Skin, Your Health | Clinica Renteria'
 description: 'The skin is the largest organ of our body and plays a crucial role in our overall health.'
 pubDate: 'Sep 29 2023'
 heroImage: '/images/importancia-dermatologa.webp'

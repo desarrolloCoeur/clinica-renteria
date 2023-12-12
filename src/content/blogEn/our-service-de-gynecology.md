@@ -1,5 +1,5 @@
 ---
-title: 'Women’s health is paramount, you know our gynecology service?'
+title: 'Women’s health is paramount, you know our gynecology service? | Clinica Renteria'
 description: 'Rentería Clinic, your comprehensive health care center in La Peñita, Nayarit. We are proud to be your reliable partner in your quest for health and wellness. Specifically, our gynecology services are designed to take care of the unique needs of women at all stages of life.'
 pubDate: 'Jul 15 2022'
 heroImage: '/images/ultrasonido-clinica-renteria.webp'
