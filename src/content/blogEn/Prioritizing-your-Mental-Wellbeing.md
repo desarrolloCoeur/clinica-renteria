@@ -1,5 +1,5 @@
 --- 
-title: 'Prioritizing your Mental Well-being | Clinica Renteria'
+title: 'Prioritizing your Mental Well-being'
 description: 'At the Rentería Clinic, we understand that health encompasses both physical and mental well-being. Stress, anxiety, depression, and other emotional problems can deeply affect your quality of life.'
 pubDate: 'Sep 29 2023'
 heroImage: '/images/bienestar-mental.webp'

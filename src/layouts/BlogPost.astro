@@ -12,11 +12,12 @@ const lang = getLangFromUrl(Astro.url);
 type Props = CollectionEntry<'blogEs'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const seoTitle = `${title} | Clinica Renteria`
 ---
 
 <html lang={lang}>
 	<head>
-		<BaseHead title={title} description={description} />
+		<BaseHead title={seoTitle} description={description} />
 	</head>
 
 	<body>

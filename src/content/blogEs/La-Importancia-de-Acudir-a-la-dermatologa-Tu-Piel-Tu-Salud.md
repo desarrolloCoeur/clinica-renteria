@@ -1,5 +1,5 @@
 ---
-title: 'La Importancia de Acudir a la Dermatóloga: Tu Piel, Tu Salud | Clinica Renteria'
+title: 'La Importancia de Acudir a la Dermatóloga: Tu Piel, Tu Salud'
 description: 'La piel es el órgano más grande de nuestro cuerpo y desempeña un papel crucial en nuestra salud general. '
 pubDate: 'Sep 29 2023'
 heroImage: '/images/importancia-dermatologa.webp'

@@ -1,5 +1,5 @@
 ---
-title: 'Do you know why x-rays are so important to your health? | Clinica Renteria'
+title: 'Do you know why x-rays are so important to your health?'
 description: 'At Clínica Renteria, we understand the importance of having advanced tools to provide an accurate and rapid diagnosis. That’s why we are proud to offer cutting-edge X-ray services, an invaluable tool in the field of diagnostic medicine.'
 pubDate: 'Jul 22 2022'
 heroImage: '/images/rayos-x-clinica-renteria.webp'
